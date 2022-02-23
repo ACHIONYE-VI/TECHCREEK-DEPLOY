@@ -1,0 +1,41 @@
+@import "./variables";
+
+.container {
+  margin-top: 50px;
+  height: 85vh;
+  justify-items: center;
+  
+    h3 {
+      font-weight: 600;
+      color: $dim-color;
+      margin-bottom: 3%;
+      margin-top: 3%;
+      justify-content: center;
+  
+    }
+    .applicants--container {
+      margin-top: 60px;
+      padding-top: 20px;    
+    //   scroll-behavior: smooth;
+    //   overflow-y: scroll;
+      height: 400px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      grid-auto-rows: minmax(auto, 100px);
+  
+      .details {
+        box-shadow: rgba(0, 0, 0, 0.1) -3px 6px 3px;
+        border-radius: 5px;
+        padding: 6% 0 0 15%;
+        .header {
+          color: $theme-color;
+          margin-bottom: 2%;
+        }
+        .state {
+          color: $dim-color;
+        }
+      }
+    }
+  }
+  

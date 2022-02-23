@@ -1,0 +1,196 @@
+@import "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $main-font;
+}
+
+.membership--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  .layout {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 70vh;
+    /*     box-shadow: rgba(0, 0, 0, 0.1) -2px 6px 12px;
+ */
+    padding-top: 1%;
+    .image--container {
+      width: 50%;
+      animation: slideInFromTop 1s ease-in;
+      overflow: hidden;
+      .image {
+        width: 50%;
+        margin: 15% auto;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .form--container {
+      /*         background: $primary;
+        */
+      overflow: hidden;
+      position: relative;
+      animation: slideInFromBottom 1s ease-in;
+
+      h3 {
+        color: $danger-color;
+        font-weight: 800;
+        padding-left: 4%;
+        padding-bottom: 4%;
+      }
+      .trigers {
+        display: flex;
+        justify-content: space-evenly;
+        width: 30%;
+        padding-left: 2%;
+        button {
+          border: none;
+          background: none;
+          color: $theme-color;
+          outline: none;
+          width: 100%;
+          transition: 0.3s ease-in-out;
+          font-size: $form-button-fontsize;
+          &:focus {
+            font-weight: 800;
+          }
+        }
+        button:hover {
+          font-weight: 800;
+        }
+      }
+      width: 50%;
+      .sign--in {
+        width: 100%;
+        form {
+          .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+
+            align-items: center;
+            input {
+              margin: 1%;
+              padding-bottom: 1rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 3px solid $theme-color;
+              border-radius: 2px;
+              outline: none;
+              margin-bottom: 3%;
+            }
+          }
+          .checkbox--container {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: $footer-fontsize;
+            margin-left: 5%;
+            margin-top: 5%;
+            .check--box {
+              color: $dim-color;
+            }
+            .forgot--text {
+              a {
+                color: $danger-color;
+                text-decoration: none;
+              }
+            }
+          }
+          .btn {
+            margin-left: 5%;
+            margin-top: 3%;
+            button {
+              /* background: $theme-color; */
+              background: none;
+              color: $theme-color;
+              padding: 0.3rem 1.5rem;
+              border: 3px solid $theme-color;
+              border-radius: 4px;
+/*               box-shadow: rgba(80, 77, 77, 0) -2px 6px 12px;
+ */            }
+          }
+        }
+      }
+
+      .register {
+        width: 100%;
+
+        form {
+          .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8%;
+
+            align-items: center;
+            input {
+              margin: 1%;
+              padding-bottom: 1rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 3px solid $theme-color;
+              border-radius: 2px;
+              outline: none;
+              margin-bottom: 3%;
+            }
+            select {
+              margin: 1%;
+              padding-bottom: 0.4rem;
+              width: 90%;
+              height: 2rem;
+              border: none;
+              border-bottom: 3px solid $theme-color;
+              border-radius: 2px;
+              outline: none;
+            }
+          }
+          .checkbox--container {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.8rem;
+            margin-left: 5%;
+            margin-top: 5%;
+            .check--box {
+              color: rgb(81, 81, 81);
+            }
+            .forgot--text {
+              a {
+                color: rgb(185, 76, 69);
+                text-decoration: none;
+              }
+            }
+          }
+          .btn {
+            margin-left: 5%;
+            margin-top: 3%;
+            button {
+             /*  background: $theme-color;
+              color: white;
+              padding: 0.5rem 2rem;
+              border: none;
+              border-radius: 2px;
+              box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px -8px; */
+              background: none;
+              color: $theme-color;
+              padding: 0.3rem 1.5rem;
+              border: 3px solid $theme-color;
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
